@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pl-api:
+    build:
+      context: ./
+      dockerfile: Api/Dockerfile
+    command: docker build
+    ports:
+      - '3001:3001'
